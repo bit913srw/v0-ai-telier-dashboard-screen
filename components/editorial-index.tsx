@@ -25,30 +25,6 @@ const sections = [
     description: "Your saved patterns",
     href: "/patterns",
   },
-  {
-    number: "05",
-    title: "About",
-    description: "Our story",
-    href: "/about",
-  },
-  {
-    number: "06",
-    title: "Support",
-    description: "Get help",
-    href: "/support",
-  },
-  {
-    number: "07",
-    title: "Help",
-    description: "How to use AI.TELIER",
-    href: "/help",
-  },
-  {
-    number: "08",
-    title: "Legal",
-    description: "Terms & conditions",
-    href: "/legal",
-  },
 ]
 
 export function EditorialIndex() {
