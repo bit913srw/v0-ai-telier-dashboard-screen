@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const footerLinks = [
   { label: "About", href: "/about" },
   { label: "Support", href: "/support" },
@@ -14,12 +16,13 @@ export function StudioTagline() {
       <nav aria-label="Footer links" className="flex items-center gap-4 md:gap-6">
         {footerLinks.map((link, i) => (
           <span key={link.href} className="flex items-center gap-4 md:gap-6">
-            <a
+            <Link
               href={link.href}
+              prefetch={false}
               className="font-sans text-muted-foreground text-[10px] md:text-[11px] uppercase tracking-[0.2em] opacity-50 hover:opacity-100 hover:text-primary transition-all duration-300"
             >
               {link.label}
-            </a>
+            </Link>
             {i < footerLinks.length - 1 && (
               <span className="text-muted-foreground text-[8px] opacity-30 select-none">
                 {"\u00B7"}

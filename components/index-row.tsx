@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 
 interface IndexRowProps {
   number: string
@@ -13,11 +14,12 @@ export function IndexRow({ number, title, description, href }: IndexRowProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <a
+    <Link
       href={href}
       className="group block"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      prefetch={false}
     >
       <div className="flex items-start gap-6 py-7 px-2 md:gap-10 md:py-9 transition-colors duration-300 hover:bg-[#E8E4DD]/50">
         <span
@@ -50,6 +52,6 @@ export function IndexRow({ number, title, description, href }: IndexRowProps) {
             : "rgba(139, 26, 26, 0.2)",
         }}
       />
-    </a>
+    </Link>
   )
 }
