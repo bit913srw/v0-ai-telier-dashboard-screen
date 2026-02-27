@@ -2,7 +2,7 @@ interface StudioHeaderProps {
   username?: string
 }
 
-export function StudioHeader({ username = "Atelier" }: StudioHeaderProps) {
+export function StudioHeader({ username = "Sydney" }: StudioHeaderProps) {
   return (
     <header className="flex flex-col items-center px-4 pt-12 pb-8 md:pt-16 md:pb-10 lg:pt-20 lg:pb-12">
       <div className="flex flex-col items-center gap-0">
