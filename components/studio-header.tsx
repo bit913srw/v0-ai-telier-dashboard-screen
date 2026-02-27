@@ -12,7 +12,7 @@ export function StudioHeader({ username = "Atelier" }: StudioHeaderProps) {
         >
           {username}{"'s"}
         </span>
-        <h1 className="font-serif text-primary text-2xl md:text-3xl lg:text-4xl font-bold text-center tracking-[0.25em] md:tracking-[0.3em] uppercase">
+        <h1 className="font-serif text-primary text-4xl md:text-6xl lg:text-8xl font-black text-center tracking-[0.25em] md:tracking-[0.3em] uppercase">
           AI.TELIER
         </h1>
         <span className="font-serif text-foreground/60 text-base md:text-lg lg:text-xl tracking-[0.4em] md:tracking-[0.5em] uppercase">
