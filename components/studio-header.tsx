@@ -7,7 +7,7 @@ export function StudioHeader({ username = "Atelier" }: StudioHeaderProps) {
     <header className="flex flex-col items-center px-4 pt-12 pb-8 md:pt-16 md:pb-10 lg:pt-20 lg:pb-12">
       <div className="flex flex-col items-center gap-0">
         <span
-          className="text-foreground/70 text-3xl md:text-4xl lg:text-5xl"
+          className="text-primary text-3xl md:text-4xl lg:text-5xl"
           style={{ fontFamily: 'var(--font-pinyon), cursive' }}
         >
           {username}{"'s"}
@@ -21,7 +21,7 @@ export function StudioHeader({ username = "Atelier" }: StudioHeaderProps) {
         >
           AI.TELIER
         </h1>
-        <span className="font-serif text-foreground/60 text-base md:text-lg lg:text-xl tracking-[0.4em] md:tracking-[0.5em] uppercase">
+        <span className="font-serif text-primary text-base md:text-lg lg:text-xl tracking-[0.4em] md:tracking-[0.5em] uppercase">
           Studio
         </span>
       </div>
